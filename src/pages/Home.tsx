@@ -207,7 +207,7 @@ export const Home: React.FC<HomeProps> = ({ onPageChange }) => {
             >
               <Card className="p-2">
                 <img
-                  src="/src/assets/shafiq.jpg"
+                  src="./src/assets/shafiq.jpg"
                   alt="Shafiq Rajput"
                   className="w-full h-80 object-cover rounded-lg"
                 />

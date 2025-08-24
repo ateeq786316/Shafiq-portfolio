@@ -32,7 +32,7 @@ export const About: React.FC = () => {
               <Card className="p-8 mb-8">
                 <div className="flex items-center gap-6 mb-8">
                   <img
-                    src="/src/assets/profile.jpg"
+                    src="./src/assets/profile.jpg"
                     alt="Shafiq Rajput"
                     className="w-24 h-24 rounded-full object-cover border-2 border-cyan-500/30"
                   />
