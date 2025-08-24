@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #0B0B0D;
+    color: #EAEAF0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  h1 {
+    line-height: 1.1;
+  }
+
+  h2, h3 {
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-6;
+  }
+  
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .glass-card {
+    @apply bg-gray-900/50 backdrop-blur-sm border border-gray-700/50;
+  }
+  
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(110, 231, 245, 0.15);
+  }
+  
+  .glow-violet {
+    box-shadow: 0 0 20px rgba(155, 135, 245, 0.15);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #13151B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2230;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6EE7F5;
+}
+
+/* Focus styles */
+:focus {
+  outline: 2px solid #6EE7F5;
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: rgba(110, 231, 245, 0.2);
+  color: #EAEAF0;
+}
