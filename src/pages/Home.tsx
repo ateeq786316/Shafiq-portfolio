@@ -4,6 +4,8 @@ import { Play, ArrowDown, Star, Award, Users, VideoIcon } from 'lucide-react';
 import { Button } from '../components/Button';
 import { Card } from '../components/Card';
 import { Section } from '../components/Section';
+import bgImage from '../assets/bg.jpg';
+import shafiqImage from '../assets/shafiq.jpg';
 
 interface HomeProps {
   onPageChange: (page: string) => void;
@@ -59,7 +61,7 @@ export const Home: React.FC<HomeProps> = ({ onPageChange }) => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-        <div className="absolute inset-0 bg-[url('/src/assets/bg.jpg')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${bgImage})` }}></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <motion.div
@@ -207,7 +209,7 @@ export const Home: React.FC<HomeProps> = ({ onPageChange }) => {
             >
               <Card className="p-2">
                 <img
-                  src="./src/assets/shafiq.jpg"
+                  src={shafiqImage}
                   alt="Shafiq Rajput"
                   className="w-full h-80 object-cover rounded-lg"
                 />

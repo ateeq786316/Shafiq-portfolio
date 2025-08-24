@@ -4,6 +4,7 @@ import { Download, Calendar, MapPin } from 'lucide-react';
 import { Button } from '../components/Button';
 import { Card } from '../components/Card';
 import { Section } from '../components/Section';
+import profileImage from '../assets/profile.jpg';
 
 const milestones = [
   { year: '2018', title: 'Started YouTube Journey', description: 'Launched channel focusing on Touring content' },
@@ -31,11 +32,11 @@ export const About: React.FC = () => {
             >
               <Card className="p-8 mb-8">
                 <div className="flex items-center gap-6 mb-8">
-                  <img
-                    src="./src/assets/profile.jpg"
-                    alt="Shafiq Rajput"
-                    className="w-24 h-24 rounded-full object-cover border-2 border-cyan-500/30"
-                  />
+                    <img
+                     src={profileImage}
+                     alt="Shafiq Rajput"
+                     className="w-24 h-24 rounded-full object-cover border-2 border-cyan-500/30"
+                    />
                   <div>
                     <h3 className="text-2xl font-bold text-gray-100 mb-2">Shafiq Rajput</h3>
                     <p className="text-cyan-400 font-medium">Video Editor & Graphic Designer</p>
